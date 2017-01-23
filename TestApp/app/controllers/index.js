@@ -47,7 +47,7 @@ PdfGeneration.generatePDFWithTemplate({
 
 PdfGeneration.generatePDFWithTemplate({
 	pdfFileName : 'pageBreakInside',
-	htmlFile : Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, 'pageBreakInside.html')
+	htmlFile : Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, 'pageBreakInside.html'),
 	successCallback : function (_data) {
 		console.log('SUCCESS!');
 		console.log('_data: ' + JSON.stringify(_data, null, '\t'));
